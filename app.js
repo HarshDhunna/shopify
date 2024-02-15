@@ -29,7 +29,7 @@ async function main() {
   console.log("database connected");
 }
 
-app.use(express.static("build"));
+app.use(express.static(path.resolve(__dirname, "build")));
 // Session middleware
 
 // Passport middleware
